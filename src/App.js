@@ -1,23 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+// -----Ducky Keyboards Shopping Cart & Landing Page-----
+// Put Nav outside of react router so it stays consistent
+// States: User, Cart, Loading, Products
+// Components: Home, Products, Cart, Checkout, Details
+// Home page displays has shop now button that takes us to Products page
+// Products page displays all Products
+// Cart button on nav opens a side bar with your car information and checkout button
+// Add to cart and Details button on each product. Onclick brings up product details in a pop up.
+// Quantity increment only available on details and cart component
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
     </div>
   );
 }
