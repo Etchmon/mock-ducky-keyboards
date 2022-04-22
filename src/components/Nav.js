@@ -6,10 +6,10 @@ function Nav(props) {
 
     return (
         <nav>
-            {/* <Link to="/">
+            <Link to="/">
                 <img src={logo} alt="logo"></img>
-            </Link> */}
-            <img src={logo} alt="logo"></img>
+            </Link>
+            {/* <img src={logo} alt="logo"></img> */}
         </nav>
     )
 }

@@ -1,7 +1,9 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import React, { useState, useEffect } from "react";
 // Components
 import Nav from "./components/Nav";
+import Home from "./components/Home";
+import Shop from './components/Shop';
 // Styles
 import "./styles/css/reset.css"
 import "./styles/css/App.css";
@@ -27,7 +29,13 @@ function App() {
 
   let content = (
     <div className="app">
-      <Nav />
+      <Router>
+        <Nav />
+        <Routes>
+          <Route exact path="/" element={<Home />} />
+          <Route exact path="/shop" element={<Shop />} />
+        </Routes>
+      </Router>
       {/* BrowserRouter
           Routes
             Route /
