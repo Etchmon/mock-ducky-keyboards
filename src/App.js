@@ -30,7 +30,7 @@ function App() {
   let content = (
     <div className="app">
       <Router>
-        <Nav />
+        <Nav user={user} />
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route exact path="/shop" element={<Shop />} />

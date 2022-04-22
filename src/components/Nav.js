@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import logo from "./../styles/images/homeLogo_white.svg";
+import cart from "./../styles/images/cart.png";
 
 function Nav(props) {
 
@@ -7,9 +8,12 @@ function Nav(props) {
     return (
         <nav>
             <Link to="/">
-                <img src={logo} alt="logo"></img>
+                <img src={logo} alt="logo" className="logo"></img>
             </Link>
-            {/* <img src={logo} alt="logo"></img> */}
+            <div>
+                <img src={cart} alt="cart"></img>
+                <span>{props.user.name}</span>
+            </div>
         </nav>
     )
 }

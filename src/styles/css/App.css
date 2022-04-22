@@ -23,3 +23,23 @@ html {
     -o-background-size: cover;
     background-size: cover;
 }
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3vh 5vw;
+    background-color: rgb(41 41 41 / 50%);
+    color: aliceblue;
+}
+
+nav div {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo {
+    height: 100px;
+    width: 100px;
+}
