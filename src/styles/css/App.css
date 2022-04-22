@@ -1,0 +1,25 @@
+html {
+    box-sizing: border-box;
+    min-width: min-content;
+    min-height: 100vh;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+#root {
+    display: grid;
+    grid-template-rows: 1fr;
+    height: 100vh;
+}
+
+.app {
+    background: url('./../images/ducky-bg-image.png') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
