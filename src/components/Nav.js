@@ -11,6 +11,8 @@ function Nav(props) {
                 <img src={logo} alt="logo" className="logo"></img>
             </Link>
             <div>
+                <span>Home</span>
+                <span>Shop</span>
                 <img src={cart} alt="cart"></img>
                 <span>{props.user.name}</span>
             </div>

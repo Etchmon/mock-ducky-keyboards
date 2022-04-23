@@ -23,6 +23,7 @@ function App() {
   const [user, setUser] = useState({
     name: 'Guest',
     cart: [],
+    viewCart: false,
   });
 
   const [loading, setLoading] = useState(true);

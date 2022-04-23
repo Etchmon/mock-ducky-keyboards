@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
+
 html {
     box-sizing: border-box;
     min-width: min-content;
@@ -17,11 +19,15 @@ html {
 }
 
 .app {
+    display: grid;
+    grid-template-rows: min-content 1fr;
     background: url('./../images/ducky-bg-image.png') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    font-family: 'Didact Gothic',
+    sans-serif;
 }
 
 nav {
@@ -37,9 +43,54 @@ nav div {
     display: flex;
     align-items: center;
     gap: 1rem;
+    cursor: pointer;
 }
 
 .logo {
     height: 100px;
     width: 100px;
+}
+
+header {
+    padding: 10vh 15vw;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: center;
+    color: aliceblue;
+    background-color: rgb(41 41 41 / 50%);
+}
+
+header h1 {
+    font-size: 7rem;
+    font-family: 'Didact Gothic',
+    sans-serif;
+    letter-spacing: .6rem;
+    font-weight: bold;
+    line-height: 1;
+    padding-bottom: 1.5rem;
+}
+
+header span {
+    font-size: 2rem;
+    font-family: 'Didact Gothic',
+    sans-serif;
+    letter-spacing: .6rem;
+}
+
+header button {
+    border: 1px solid aliceblue;
+    border-radius: 5px;
+    margin: 2rem 0;
+    font-size: 2rem;
+    padding: 1rem;
+    white-space: nowrap;
+    color: aliceblue;
+    background-color: rgb(255 255 255/ 0%);
+}
+
+header button:hover {
+    background-color: aliceblue;
+    color: rgb(41 41 41);
+    transition: all .7s ease;
 }
