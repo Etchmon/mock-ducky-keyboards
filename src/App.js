@@ -24,11 +24,17 @@ function App() {
 
   const [user, setUser] = useState({
     name: 'Guest',
-    cart: [],
-    viewCart: false,
   });
 
+  const [cart, setCart] = useState([]);
+
   const [loading, setLoading] = useState(true);
+
+  const addToCart = (product) => {
+    setCart(cart => [...cart, product]);
+    console.log(cart);
+    document.querySelector('.product-overlay').style.transform = 'scale(0)'
+  }
 
   let content = (
     <div className="app">
@@ -36,14 +42,9 @@ function App() {
         <Nav user={user} />
         <Routes>
           <Route exact path="/" element={<Home />} />
-          <Route exact path="/shop" element={<Shop />} />
+          <Route exact path="/shop" element={<Shop user={user} addToCart={addToCart} />} />
         </Routes>
       </Router>
-      {/* BrowserRouter
-          Routes
-            Route /
-            Route /shop */}
-
     </div>
   );
 

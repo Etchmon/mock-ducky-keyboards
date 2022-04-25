@@ -2,19 +2,11 @@ import allProducts from "../data/AllProducts";
 import React, { useState, useEffect } from "react";
 
 function Shop(props) {
-    console.log(allProducts);
-    const [name, setName] = useState('');
-    const [price, setPrice] = useState(0);
-    const [size, setSize] = useState('');
-    const [sw, setSwitch] = useState('');
-    const [src, setSrc] = useState();
+    const [currentProduct, setCurrentProduct] = useState({});
 
     const viewDetails = (product) => {
-        setName(product.name);
-        setSize(product.dimensions);
-        setSwitch(product.switch);
-        setSrc(product.img);
-        setPrice(product.price)
+
+        setCurrentProduct(product);
 
         document.querySelector('.product-overlay').style.transform = 'scale(1)'
     };
@@ -26,7 +18,7 @@ function Shop(props) {
             </div>
             <div className="shop-display">
                 {allProducts.map((product) => (
-                    <div className="product-card" key={product.name} id={product.name}>
+                    <div className="product-card" key={product.name} id={product.name} >
                         <h2>{product.name}</h2>
                         <img alt="product-card" src={product.img}></img>
                         <div className="overlay">
@@ -37,13 +29,13 @@ function Shop(props) {
             </div>
             <div className="product-overlay">
                 <button type="button" className="close-btn" onClick={() => document.querySelector('.product-overlay').style.transform = 'scale(0)'}>x</button>
-                <span className="detail-card-name">{name}</span>
-                <img src={src} alt="product"></img>
+                <span className="detail-card-name">{currentProduct.name}</span>
+                <img src={currentProduct.img} alt="product"></img>
                 <div className="detail-card">
-                    <span className="detail-card-price">${price}</span>
-                    <span className="detail-card-switch">{sw}</span>
-                    <span className="detail-card-size">{size}</span>
-                    <button type="button">ADD TO CART</button>
+                    <span className="detail-card-price">${currentProduct.price}</span>
+                    <span className="detail-card-switch">{currentProduct.switch}</span>
+                    <span className="detail-card-size">{currentProduct.dimensions}</span>
+                    <button type="button" onClick={() => props.addToCart(currentProduct)}>ADD TO CART</button>
                 </div>
             </div>
         </section>
