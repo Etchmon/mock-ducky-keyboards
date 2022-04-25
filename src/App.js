@@ -9,14 +9,16 @@ import "./styles/css/reset.css"
 import "./styles/css/App.css";
 
 // -----Ducky Keyboards Shopping Cart & Landing Page-----
-// Put Nav outside of react router so it stays consistent
-// States: User, Cart, Loading, Products
-// Components: Home, Shop, Cart, Checkout, Details, Card
-// Home page displays has shop now button that takes us to Products page
-// Products page displays all Products
-// Cart button on nav opens a side bar with your car information and checkout button
-// Add to cart and Details button on each product. Onclick brings up product details in a pop up.
-// Quantity increment only available on details and cart component
+// Fill data.js with 15 different keyboards
+// Display cards of each product showing image
+// Oncard click display that hard in a full screen blurred background pop up that gives information on price, dimensions, and switch type. Use a bigger image than on the display page.
+// Onhover display a button for details
+// Add to card button only available on details
+// Add to cart pushing that products info into users cart array.
+// Cart button onclick, slide out cart display over right side of page, blurr background behind it.
+// Cart displays all items in cart with product name and price
+// At bottom display price total 
+// Add delete, and increment button/counter to cart display for each product.
 
 function App() {
 
