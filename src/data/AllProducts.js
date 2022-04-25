@@ -1,3 +1,19 @@
+import mechaLlama from "./../styles/images/mecha-llama.png";
+import mechaSfEmerald from "./../styles/images/mecha-sf-emerald.png";
+import mechaSfOcean from "./../styles/images/mecha-sf-ocean.png";
+import creatorMechaMini from "./../styles/images/creator-mecha-mini.png";
+import one2BonVoyage from './../styles/images/one2-bonvoyage-tkl.png';
+import one2MiniSkyline from "./../styles/images/one2-mini-skyline.png";
+import one2PureWhiteMini from "./../styles/images/one2-pure-white-mini.png";
+import one2Rosa from "./../styles/images/one2-rosa.png";
+import one2SfLodine from "./../styles/images/one2-sf-lodine.png";
+import one2Tuxedo from "./../styles/images/one2-tuxedo.png";
+import one3DayBreak from "./../styles/images/one3-daybreak.png";
+import one3FujiTkl from "./../styles/images/one3-tkl-fuji.png";
+import shine7Christmas from "./../styles/images/shine-7-christmas.png";
+import yearOfRat from "./../styles/images/year-of-rat.png";
+import yearOfPig from "./../styles/images/year-of-pig.png";
+
 const allProducts = [
     {
         name: '',
@@ -5,7 +21,7 @@ const allProducts = [
         dimensions: '',
         switch: '',
         quantity: 1,
-        // image: 
+        img: mechaLlama,
     },
     {
         name: '',
@@ -13,7 +29,7 @@ const allProducts = [
         dimensions: '',
         switch: '',
         quantity: 1,
-        // image: 
+        img: mechaSfEmerald,
     },
     {
         name: '',
@@ -21,7 +37,7 @@ const allProducts = [
         dimensions: '',
         switch: '',
         quantity: 1,
-        // image: 
+        img: mechaSfOcean,
     },
     {
         name: '',
@@ -29,7 +45,7 @@ const allProducts = [
         dimensions: '',
         switch: '',
         quantity: 1,
-        // image: 
+        img: creatorMechaMini,
     },
     {
         name: '',
@@ -37,7 +53,7 @@ const allProducts = [
         dimensions: '',
         switch: '',
         quantity: 1,
-        // image: 
+        img: one2BonVoyage,
     },
     {
         name: '',
@@ -45,7 +61,7 @@ const allProducts = [
         dimensions: '',
         switch: '',
         quantity: 1,
-        // image: 
+        img: one2MiniSkyline
     },
     {
         name: '',
@@ -53,7 +69,7 @@ const allProducts = [
         dimensions: '',
         switch: '',
         quantity: 1,
-        // image: 
+        img: one2PureWhiteMini
     },
     {
         name: '',
@@ -61,7 +77,7 @@ const allProducts = [
         dimensions: '',
         switch: '',
         quantity: 1,
-        // image: 
+        img: one2Rosa,
     },
     {
         name: '',
@@ -69,7 +85,7 @@ const allProducts = [
         dimensions: '',
         switch: '',
         quantity: 1,
-        // image: 
+        img: one2SfLodine,
     },
     {
         name: '',
@@ -77,7 +93,7 @@ const allProducts = [
         dimensions: '',
         switch: '',
         quantity: 1,
-        // image: 
+        img: one2Tuxedo
     },
     {
         name: '',
@@ -85,7 +101,7 @@ const allProducts = [
         dimensions: '',
         switch: '',
         quantity: 1,
-        // image: 
+        img: one3DayBreak,
     },
     {
         name: '',
@@ -93,7 +109,7 @@ const allProducts = [
         dimensions: '',
         switch: '',
         quantity: 1,
-        // image: 
+        img: one3FujiTkl,
     },
     {
         name: '',
@@ -101,7 +117,7 @@ const allProducts = [
         dimensions: '',
         switch: '',
         quantity: 1,
-        // image: 
+        img: shine7Christmas,
     },
     {
         name: '',
@@ -109,7 +125,7 @@ const allProducts = [
         dimensions: '',
         switch: '',
         quantity: 1,
-        // image: 
+        img: yearOfPig,
     },
     {
         name: '',
@@ -117,6 +133,8 @@ const allProducts = [
         dimensions: '',
         switch: '',
         quantity: 1,
-        // image: 
+        img: yearOfRat,
     },
-]
+];
+
+export default allProducts;
