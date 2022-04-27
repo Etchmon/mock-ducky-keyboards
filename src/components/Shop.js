@@ -2,13 +2,19 @@ import allProducts from "../data/AllProducts";
 import React, { useState, useEffect } from "react";
 
 function Shop(props) {
-    const [currentProduct, setCurrentProduct] = useState({});
+    const [currentProduct, setCurrentProduct] = useState({
+        quantity: 1
+    });
 
     const viewDetails = (product) => {
 
         setCurrentProduct(product);
 
-        document.querySelector('.product-overlay').style.transform = 'scale(1)'
+        document.querySelector('.product-overlay').style.transform = 'scale(1)';
+    };
+
+    let handleChange = (e) => {
+        setCurrentProduct({ ...currentProduct, quantity: e.target.value });
     };
 
     return (
@@ -35,6 +41,7 @@ function Shop(props) {
                     <span className="detail-card-price">${currentProduct.price}</span>
                     <span className="detail-card-switch">{currentProduct.switch}</span>
                     <span className="detail-card-size">{currentProduct.dimensions}</span>
+                    <input type="number" value={currentProduct.quantity} onChange={handleChange} />
                     <button type="button" onClick={() => props.addToCart(currentProduct)}>ADD TO CART</button>
                 </div>
             </div>

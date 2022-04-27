@@ -30,6 +30,8 @@ function App() {
   const [subtotal, setSubTotal] = useState(0);
 
   useEffect(() => {
+    console.log('render');
+    setSubTotal(subtotal);
     cart.forEach(product => {
       setSubTotal(subtotal + (product.price * product.quantity))
     })
@@ -50,7 +52,7 @@ function App() {
           <Route exact path="/" element={<Home />} />
           <Route exact path="/shop" element={<Shop user={user} addToCart={addToCart} />} />
         </Routes>
-        {viewCart ? <Cart cart={cart} subtotal={subtotal} onClick={onClick} /> : null}
+        {viewCart ? <Cart cart={cart} subtotal={subtotal} setSubTotal={setSubTotal} onClick={onClick} /> : null}
       </Router>
     </div>
   );

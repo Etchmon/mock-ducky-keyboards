@@ -10,6 +10,14 @@ import React, { useState, useEffect } from "react";
 
 function Cart(props) {
 
+    const [cart, setCart] = useState(props.cart);
+
+    const handleChange = (e, product) => {
+        let foo = cart.findIndex(item => item.name === product.name);
+        setCart([...cart], cart[foo].quantity = e.target.value);
+        props.setSubTotal(props.subtotal + product.price * product.quantity);
+    }
+
     return (
         <div className="cart-container">
             <div className="cart-bg" onClick={() => props.onClick()}>
@@ -22,8 +30,8 @@ function Cart(props) {
                         <div key={product.name} className="cart-content-product">
                             <img src={product.img} alt="product-image" />
                             <span>{product.name}</span>
-                            <span>${product.price}</span>
-                            <span>{product.quantity}</span>
+                            <span>${product.price * product.quantity}</span>
+                            <input type="number" value={product.quantity} onChange={(e) => handleChange(e, product)} />
                         </div>
                     ))}
                 </div>

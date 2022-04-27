@@ -37,7 +37,6 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 3vh 5vw;
-    color: aliceblue;
 }
 
 nav div {
@@ -49,6 +48,8 @@ nav div {
 nav div * {
     padding: .2rem;
     cursor: pointer;
+    text-decoration: none;
+    color: aliceblue;
 }
 
 .logo {
@@ -111,7 +112,7 @@ header button:hover {
 .side-bar {
     width: 20vw;
     color: aliceblue;
-    font-size: 4rem;
+    font-size: clamp(1rem, 3vw, 5vw);
     text-align: center;
     border-right: 1px solid aliceblue;
     font-weight: bold;
@@ -261,6 +262,12 @@ header button:hover {
     color: aliceblue;
 }
 
+.detail-card input {
+    font-size: 1.5rem;
+    width: 4rem;
+    text-align: center;
+}
+
 .detail-card button {
     border: 1px solid aliceblue;
     border-radius: 5px;
@@ -322,11 +329,14 @@ header button:hover {
 }
 
 .cart-content-product {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: min-content 1fr 1fr min-content;
+    grid-template-rows: 1fr;
     font-size: 1.3rem;
     font-weight: bold;
+    align-items: center;
+    text-align: center;
+    grid-column-gap: .5rem;
 }
 
 .cart-content img {
@@ -335,6 +345,12 @@ header button:hover {
     object-fit: contain;
     -webkit-transition: .3s ease;
     transition: .3s ease;
+}
+
+.cart-content input {
+    font-size: 1.2rem;
+    width: 3rem;
+    text-align: center;
 }
 
 .cart button {
@@ -346,7 +362,7 @@ header button:hover {
     white-space: nowrap;
     color: aliceblue;
     background-color: rgb(41 41 41/ 90%);
-    width: 33.33%;
+    width: min-content;
 }
 
 .cart button:hover {
