@@ -277,3 +277,70 @@ header button:hover {
     color: rgb(41 41 41);
     transition: all .7s ease;
 }
+
+.cart {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 33.33333%;
+    height: 100%;
+    background: aliceblue;
+    z-index: 10;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cart h1 {
+    font-size: 3rem;
+}
+
+.cart-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: 6rem;
+    overflow-y: scroll;
+    padding: 1rem 0;
+}
+
+.cart-content::-webkit-scrollbar{
+    display: none;
+}
+
+.cart-content-product {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.cart-content img {
+    height: 5rem;
+    width: 5rem;
+    object-fit: contain;
+}
+
+.cart button {
+    border: 1px solid aliceblue;
+    border-radius: 5px;
+    margin: 2rem 0;
+    font-size: 1.4rem;
+    padding: 1rem;
+    white-space: nowrap;
+    color: aliceblue;
+    background-color: rgb(41 41 41/ 90%);
+}
+
+.cart button:hover {
+    background-color: aliceblue;
+    color: rgb(41 41 41);
+    transition: all .7s ease;
+    border: 1px solid rgb(41 41 41);
+}
+
+.cart-subtotal {
+    padding: 2rem 0;
+    font-size: 1.8rem;
+}
