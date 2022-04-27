@@ -278,6 +278,19 @@ header button:hover {
     transition: all .7s ease;
 }
 
+.cart-container {
+    z-index: 8;
+}
+.cart-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(41 41 41 / 80%);
+    z-index: 9;
+}
+
 .cart {
     position: fixed;
     top: 0;
@@ -320,6 +333,8 @@ header button:hover {
     height: 5rem;
     width: 5rem;
     object-fit: contain;
+    -webkit-transition: .3s ease;
+    transition: .3s ease;
 }
 
 .cart button {
@@ -331,6 +346,7 @@ header button:hover {
     white-space: nowrap;
     color: aliceblue;
     background-color: rgb(41 41 41/ 90%);
+    width: 33.33%;
 }
 
 .cart button:hover {

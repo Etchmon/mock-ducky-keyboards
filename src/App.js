@@ -50,7 +50,7 @@ function App() {
           <Route exact path="/" element={<Home />} />
           <Route exact path="/shop" element={<Shop user={user} addToCart={addToCart} />} />
         </Routes>
-        {viewCart ? <Cart cart={cart} subtotal={subtotal} /> : null}
+        {viewCart ? <Cart cart={cart} subtotal={subtotal} onClick={onClick} /> : null}
       </Router>
     </div>
   );

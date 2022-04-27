@@ -11,22 +11,27 @@ import React, { useState, useEffect } from "react";
 function Cart(props) {
 
     return (
-        <div className="cart">
-            <h1>Your Cart</h1>
-            <div className="cart-content">
-                {props.cart.map((product) =>
-                (
-                    <div key={product.name} className="cart-content-product">
-                        <img src={product.img} alt="product-image" />
-                        <span>{product.name}</span>
-                        <span>${product.price}</span>
-                        <span>{product.quantity}</span>
-                    </div>
-                ))}
+        <div className="cart-container">
+            <div className="cart-bg" onClick={() => props.onClick()}>
             </div>
-            <span className="cart-subtotal">Subtotal:${props.subtotal}</span>
-            <button type="button">CHECKOUT</button>
+            <div className="cart">
+                <h1>Your Cart</h1>
+                <div className="cart-content">
+                    {props.cart.map((product) =>
+                    (
+                        <div key={product.name} className="cart-content-product">
+                            <img src={product.img} alt="product-image" />
+                            <span>{product.name}</span>
+                            <span>${product.price}</span>
+                            <span>{product.quantity}</span>
+                        </div>
+                    ))}
+                </div>
+                <span className="cart-subtotal">Subtotal: ${props.subtotal}</span>
+                <button type="button">CHECKOUT</button>
+            </div>
         </div>
+
     )
 }
 
