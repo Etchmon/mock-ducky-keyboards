@@ -9,12 +9,6 @@ import "./styles/css/reset.css"
 import "./styles/css/App.css";
 
 // -----Ducky Keyboards Shopping Cart & Landing Page-----
-// Fill data.js with 15 different keyboards
-// Display cards of each product showing image
-// Oncard click display that hard in a full screen blurred background pop up that gives information on price, dimensions, and switch type. Use a bigger image than on the display page.
-// Onhover display a button for details
-// Add to card button only available on details
-// Add to cart pushing that products info into users cart array.
 // Cart button onclick, slide out cart display over right side of page, blurr background behind it.
 // Cart displays all items in cart with product name and price
 // At bottom display price total 
