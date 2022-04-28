@@ -7,7 +7,7 @@ function Home(props) {
         <header>
             <h1>Ducky</h1>
             <span>Capture the essence of typing</span>
-            <Link to="/shop">
+            <Link to="shopping-cart/shop">
                 <button type="button">
                     SHOP NOW
                 </button>

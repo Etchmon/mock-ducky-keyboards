@@ -7,14 +7,14 @@ function Nav(props) {
 
     return (
         <nav>
-            <Link to="/">
+            <Link to="shopping-cart/">
                 <img src={logo} alt="logo" className="logo"></img>
             </Link>
             <div>
-                <Link to="/">
+                <Link to="shopping-cart/">
                     <span>Home</span>
                 </Link>
-                <Link to="/shop">
+                <Link to="shopping-cart/shop">
                     <span>Shop</span>
                 </Link>
                 <img src={cart} alt="cart" onClick={() => props.onClick()}></img>

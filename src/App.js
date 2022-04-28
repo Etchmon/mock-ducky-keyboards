@@ -41,8 +41,8 @@ function App() {
       <Router>
         <Nav user={user} onClick={onClick} />
         <Routes>
-          <Route exact path="/" element={<Home />} />
-          <Route exact path="/shop" element={<Shop user={user} addToCart={addToCart} />} />
+          <Route exact path="shopping-cart/" element={<Home />} />
+          <Route exact path="shopping-cart/shop" element={<Shop user={user} addToCart={addToCart} />} />
         </Routes>
         {viewCart ? <Cart cart={cart} setCart={setCart} onClick={onClick} /> : null}
       </Router>
