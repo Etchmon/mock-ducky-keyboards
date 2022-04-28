@@ -22,8 +22,16 @@ function App() {
   const [viewCart, setViewCart] = useState(false);
 
   const addToCart = (product) => {
+    let boo = false;
+    cart.forEach(item => {
+      if (item.name === product.name) {
+        item.quantity = Number(item.quantity) + Number(product.quantity);
+        boo = true;
+      };
+    });
+    document.querySelector('.product-overlay').style.transform = 'scale(0)';
+    if (boo) return;
     setCart(cart => [...cart, product]);
-    document.querySelector('.product-overlay').style.transform = 'scale(0)'
   };
 
   const onClick = () => setViewCart(!viewCart);
@@ -36,7 +44,7 @@ function App() {
           <Route exact path="/" element={<Home />} />
           <Route exact path="/shop" element={<Shop user={user} addToCart={addToCart} />} />
         </Routes>
-        {viewCart ? <Cart cart={cart} subtotal={subtotal} setCart={setCart} onClick={onClick} /> : null}
+        {viewCart ? <Cart cart={cart} setCart={setCart} onClick={onClick} /> : null}
       </Router>
     </div>
   );

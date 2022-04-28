@@ -8,7 +8,7 @@ function Shop(props) {
 
     const viewDetails = (product) => {
 
-        setCurrentProduct(product);
+        setCurrentProduct({ ...product, quantity: 1 });
 
         document.querySelector('.product-overlay').style.transform = 'scale(1)';
     };

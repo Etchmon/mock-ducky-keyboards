@@ -7,14 +7,16 @@ function Cart(props) {
     const handleChange = (e, product) => {
         let foo = props.cart.findIndex(item => item.name === product.name);
         props.setCart([...props.cart], props.cart[foo].quantity = e.target.value);
-        console.log(props.cart);
-    }
+    };
+
 
     useEffect(() => {
-        props.cart.forEach(product => {
-            setSubTotal(subtotal + (product.price * product.quantity));
-        })
-    }, [props.cart]);
+        let temp = 0;
+        props.cart.forEach(element => {
+            temp = temp + (element.price * element.quantity);
+        });
+        setSubTotal(temp);
+    }, [props]);
 
     return (
         <div className="cart-container">
@@ -26,7 +28,7 @@ function Cart(props) {
                     {props.cart.map((product) =>
                     (
                         <div key={product.name} className="cart-content-product">
-                            <img src={product.img} alt="product-image" />
+                            <img src={product.img} alt="product" />
                             <span>{product.name}</span>
                             <span>${product.price * product.quantity}</span>
                             <input type="number" value={product.quantity} onChange={(e) => handleChange(e, product)} />
