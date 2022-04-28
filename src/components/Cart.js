@@ -10,13 +10,19 @@ import React, { useState, useEffect } from "react";
 
 function Cart(props) {
 
-    const [cart, setCart] = useState(props.cart);
+    const [subtotal, setSubTotal] = useState(0);
 
     const handleChange = (e, product) => {
-        let foo = cart.findIndex(item => item.name === product.name);
-        setCart([...cart], cart[foo].quantity = e.target.value);
-        props.setSubTotal(props.subtotal + product.price * product.quantity);
+        let foo = props.cart.findIndex(item => item.name === product.name);
+        props.setCart([...props.cart], props.cart[foo].quantity = e.target.value);
+        console.log(props.cart);
     }
+
+    useEffect(() => {
+        props.cart.forEach(product => {
+            setSubTotal(subtotal + (product.price * product.quantity));
+        })
+    }, [props.cart]);
 
     return (
         <div className="cart-container">
@@ -35,7 +41,7 @@ function Cart(props) {
                         </div>
                     ))}
                 </div>
-                <span className="cart-subtotal">Subtotal: ${props.subtotal}</span>
+                <span className="cart-subtotal">Subtotal: ${subtotal}</span>
                 <button type="button">CHECKOUT</button>
             </div>
         </div>

@@ -29,13 +29,12 @@ function App() {
 
   const [subtotal, setSubTotal] = useState(0);
 
-  useEffect(() => {
-    console.log('render');
-    setSubTotal(subtotal);
-    cart.forEach(product => {
-      setSubTotal(subtotal + (product.price * product.quantity))
-    })
-  }, [cart]);
+  // useEffect(() => {
+  //   console.log('render');
+  //   cart.forEach(product => {
+  //     setSubTotal(subtotal + (product.price * product.quantity))
+  //   })
+  // }, [cart]);
 
   const addToCart = (product) => {
     setCart(cart => [...cart, product]);
@@ -52,7 +51,7 @@ function App() {
           <Route exact path="/" element={<Home />} />
           <Route exact path="/shop" element={<Shop user={user} addToCart={addToCart} />} />
         </Routes>
-        {viewCart ? <Cart cart={cart} subtotal={subtotal} setSubTotal={setSubTotal} onClick={onClick} /> : null}
+        {viewCart ? <Cart cart={cart} subtotal={subtotal} setCart={setCart} onClick={onClick} /> : null}
       </Router>
     </div>
   );

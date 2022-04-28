@@ -13,7 +13,7 @@ function Shop(props) {
         document.querySelector('.product-overlay').style.transform = 'scale(1)';
     };
 
-    let handleChange = (e) => {
+    const handleChange = (e) => {
         setCurrentProduct({ ...currentProduct, quantity: e.target.value });
     };
 
