@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/shopping-cart/static/css/main.9ff340d8.css",
+    "main.js": "/shopping-cart/static/js/main.d03dde95.js",
+    "static/media/ducky-bg-image.png": "/shopping-cart/static/media/ducky-bg-image.b084865084b11f8706ab.png",
+    "static/media/year-of-rat.png": "/shopping-cart/static/media/year-of-rat.1aa747cc8f32a5555109.png",
+    "static/media/year-of-pig.png": "/shopping-cart/static/media/year-of-pig.f8433b796ddffc4202e8.png",
+    "static/media/mecha-llama.png": "/shopping-cart/static/media/mecha-llama.2d0ce55403dc12b153b6.png",
+    "static/media/mecha-sf-emerald.png": "/shopping-cart/static/media/mecha-sf-emerald.d8ae4111068970c39b30.png",
+    "static/media/one3-daybreak.png": "/shopping-cart/static/media/one3-daybreak.82fbb32e422316c8f58e.png",
+    "static/media/mecha-sf-ocean.png": "/shopping-cart/static/media/mecha-sf-ocean.bbc56f7f0bba855290b1.png",
+    "static/media/one2-mini-skyline.png": "/shopping-cart/static/media/one2-mini-skyline.e754c5ece9190c070b09.png",
+    "static/media/one2-bonvoyage-tkl.png": "/shopping-cart/static/media/one2-bonvoyage-tkl.44c9063bc2b0f292bcde.png",
+    "static/media/one2-pure-white-mini.png": "/shopping-cart/static/media/one2-pure-white-mini.efbcdf63d696b52c0a4d.png",
+    "static/media/one2-sf-lodine.png": "/shopping-cart/static/media/one2-sf-lodine.8ff5cf8f800f4b115779.png",
+    "static/media/one3-tkl-fuji.png": "/shopping-cart/static/media/one3-tkl-fuji.3237ab97b7c90444d8e4.png",
+    "static/media/one2-rosa.png": "/shopping-cart/static/media/one2-rosa.a95042a41f85e453c47f.png",
+    "static/media/creator-mecha-mini.png": "/shopping-cart/static/media/creator-mecha-mini.b86bc5aaba0fdebb2fb3.png",
+    "static/media/shine-7-christmas.png": "/shopping-cart/static/media/shine-7-christmas.210011c0374756515f8e.png",
+    "static/media/one2-tuxedo.png": "/shopping-cart/static/media/one2-tuxedo.b0809cd4d92aa37ad312.png",
+    "static/media/homeLogo_white.svg": "/shopping-cart/static/media/homeLogo_white.422d2dc3e040bb0558caefa2d854af0c.svg",
+    "index.html": "/shopping-cart/index.html",
+    "main.9ff340d8.css.map": "/shopping-cart/static/css/main.9ff340d8.css.map",
+    "main.d03dde95.js.map": "/shopping-cart/static/js/main.d03dde95.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9ff340d8.css",
+    "static/js/main.d03dde95.js"
+  ]
+}
