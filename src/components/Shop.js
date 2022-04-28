@@ -1,5 +1,5 @@
 import allProducts from "../data/AllProducts";
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 
 function Shop(props) {
     const [currentProduct, setCurrentProduct] = useState({

@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 // Components
 import Nav from "./components/Nav";
 import Home from "./components/Home";
@@ -10,10 +10,6 @@ import "./styles/css/reset.css"
 import "./styles/css/App.css";
 
 // -----Ducky Keyboards Shopping Cart & Landing Page-----
-// Cart button onclick, slide out cart display over right side of page, blurr background behind it.
-// Cart displays all items in cart with product name and price
-// At bottom display price total 
-// Add delete, and increment button/counter to cart display for each product.
 
 function App() {
 
@@ -24,17 +20,6 @@ function App() {
   const [cart, setCart] = useState([]);
 
   const [viewCart, setViewCart] = useState(false);
-
-  const [loading, setLoading] = useState(true);
-
-  const [subtotal, setSubTotal] = useState(0);
-
-  // useEffect(() => {
-  //   console.log('render');
-  //   cart.forEach(product => {
-  //     setSubTotal(subtotal + (product.price * product.quantity))
-  //   })
-  // }, [cart]);
 
   const addToCart = (product) => {
     setCart(cart => [...cart, product]);
