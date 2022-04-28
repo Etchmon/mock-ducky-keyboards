@@ -14,6 +14,7 @@ function Shop(props) {
     };
 
     const handleChange = (e) => {
+        if (e.target.value < 1) return;
         setCurrentProduct({ ...currentProduct, quantity: e.target.value });
     };
 

@@ -5,6 +5,7 @@ function Cart(props) {
     const [subtotal, setSubTotal] = useState(0);
 
     const handleChange = (e, product) => {
+        if (e.target.value < 1) return;
         let foo = props.cart.findIndex(item => item.name === product.name);
         props.setCart([...props.cart], props.cart[foo].quantity = e.target.value);
     };
