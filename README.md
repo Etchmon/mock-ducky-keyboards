@@ -2,6 +2,8 @@
 
 E-commerce website prototype encompassing a visually appealing landing page, comprehensive product lists, and an efficient shopping cart system.
 
+![Screenshot](./public/shopping-cart.gif)
+
 ## Features
 
 - View a list of products with their details, including name, price, and quantity.
