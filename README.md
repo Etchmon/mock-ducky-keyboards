@@ -4,7 +4,7 @@ E-commerce website prototype encompassing a visually appealing landing page, com
 
 ## Link
 
-View the project <a href="https://etchmon.github.io/shopping-cart/">here</a>.
+View the project <a href="https://etchmon.github.io/shopping-cart/" target="_blank">here</a>.
 
 ![Screenshot](./public/shopping-cart.gif)
 
