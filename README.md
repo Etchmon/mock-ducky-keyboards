@@ -1,4 +1,4 @@
-# Shopping Cart
+# Ducky Keyboard's website mock
 
 E-commerce website prototype encompassing a visually appealing landing page, comprehensive product lists, and an efficient shopping cart system.
 
@@ -7,7 +7,6 @@ E-commerce website prototype encompassing a visually appealing landing page, com
 View the project <a href="https://etchmon.github.io/shopping-cart/" target="_blank">here</a>.
 
 ![Screenshot](./public/shopping-cart.gif)
-
 
 ## Features
 
